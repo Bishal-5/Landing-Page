@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+#main-nav {
+    text-align: center;
+}
+
+#main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#main-nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+#main-nav ul li a:hover {
+    color: #ffd700;
+    /* Change color on hover */
+    transform: scale(1.5);
+}
+
+li a {
+    font-size: 21px;
+}
+
+p {
+    padding: 0 33px 0 33px;
+    text-align: justify;
+    font-size: 24px;
+    color: blue;
+}
+
+#main-nav {
+    scroll-behavior: smooth;
+}
+
+
+
+.foot {
+    display: inline-grid;
+    grid-auto-flow: row;
+    grid-gap: 24px;
+    justify-items: center;
+    margin: auto;
+}
+
+.foot a {
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+    font-size: 27px;
+}
+
+.foot a:hover {
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+}
+
+.foot li:last-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.foot li:hover~li p {
+    animation: wave-animation 0.3s infinite;
+}
+
+/* below is just for demo styling */
+
+#foot {
+    display: flex;
+    height: 49vh;
+    width: 100%;
+    background-color: #002a38;
+    /*! line-height: 10.3; */
+    font-family: Menlo, monospace;
+}
